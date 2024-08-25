@@ -33,7 +33,6 @@ jobs:
       - name: Run unit tests
         run: |
           poetry run pytest
-          poetry run behave tests/features
 
       - name: Run BDD tests
         run: |
