@@ -16,5 +16,5 @@ A sleek, modern URL shortener built with Python, Flask, and HTMX.
 - Backend: Python, Flask
 - Frontend: HTML, CSS, HTMX
 - Database: SQLAlchemy
-- Testing: Pytest
+- Testing: Pytest, Behave
 - CI/CD: GitHub Actions
