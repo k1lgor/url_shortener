@@ -30,9 +30,14 @@ jobs:
       - name: Install dependencies
         run: poetry install
 
-      - name: Run tests
+      - name: Run unit tests
         run: |
           poetry run pytest
+          poetry run behave tests/features
+
+      - name: Run BDD tests
+        run: |
+          playwright install
           poetry run behave tests/features
 
       - name: Zip artifact for deployment
